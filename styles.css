@@ -1,0 +1,151 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('1.jpg');
+    background-color: rgb(18, 18, 77);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    /* gap: 5em; */
+}
+
+@media screen and (max-width: 900px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+        gap: 5em;
+    }
+}
+
+header{
+    padding: 1.5em 1.5em 1.5em 8em;
+    color: white;
+    margin-bottom: 2em;
+}
+
+form{
+    float: left;
+    background-color: white;
+    border-radius: 4px;
+    /* margin-left: 5em; */
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.box1 form input[type="text"]{
+    border-radius: 2px;
+    width: 100%;
+    height: 2.5em;
+    padding: 0.3em;
+    border: 1px solid lightgray;
+}
+
+.box1 form textarea{
+    border-radius: 2px;
+    padding: 0.3em;
+    width: 100%;
+    border-color: lightgrey;
+}
+
+.box1 form #save{
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    width: 100%;
+    height: 2.8em;
+    padding: 0.4em;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#save:hover{
+    cursor: pointer;
+}
+
+h4{
+    display: inline-block;
+}
+
+#pendingHeading{
+    color: white;
+    padding: 0 0 1em 0;
+}
+
+#completedHeading{
+    color: white;
+    padding: 1em 0;
+}
+
+.box2 .heading{
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+    margin-bottom: 1.5em;
+    color: white;
+    padding: 0 0.8em;
+}
+
+@media screen and (max-width: 520px){
+    header{
+        padding: 1.5em 1.5em 1.5em 4em;
+    }
+    
+    .box2 .heading{
+        gap: 2em;
+    }
+}
+
+@media screen and (max-width: 370px){
+    header{
+        padding: 1.5em 1.5em 1.5em 3em;
+    }
+
+    .box2 .heading {
+        gap: 1em;
+    }
+}
+
+hr{
+    margin-bottom: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    padding: 1em;
+    margin: 0.8em;
+}
+
+.button{
+    background-color: brown;
+    padding: 0.5em;
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+
+.button:hover{
+    cursor: pointer;
+}

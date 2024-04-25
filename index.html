@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h2>To-Do List Web App</h2>
+    </header>
+    <div class="container">
+        
+        <main>
+            <div class="box1">
+                <form>
+                    <input type="text" id="title" name="title" placeholder="Title" required>
+                    <textarea name="description" id="description" cols="30" rows="15"
+                        placeholder="Short description"></textarea>
+                    <input type="submit" id="save" value="Add Task">
+                </form>
+            </div>
+        
+            <div class="box2">
+                <h2 id="pendingHeading">Pending Tasks</h2>
+                <div class="heading">
+                    <h4>Complete</h4>
+                    <h4>Title</h4>
+                    <h4>Description</h4>
+                    <h4>Delete</h4>
+                </div>
+                <hr>
+        
+                <ul id="pendingTasks">
+                    <li>
+                        <button class="button" onclick="completeTask(this)">✓</button>
+                        <span>Read</span>
+                        <span>Read 10 mins</span>
+                        <button class="button" onclick="deleteTask(this)">✕</button>
+                    </li>
+                </ul>
+        
+                <h2 id="completedHeading">Completed Tasks</h2>
+                <div class="heading">
+                    <h4>Undo</h4>
+                    <h4>Title</h4>
+                    <h4>Description</h4>
+                    <h4>Delete</h4>
+                </div>
+                <hr>
+        
+                <ul id="completedTasks">
+                    <li>
+                        <button class="button" onclick="undoTask(this)">↩</button>
+                        <span>Run</span>
+                        <span>Run 45 mins in morning</span>
+                        <button class="button" onclick="deleteTask(this)">✕</button>
+                    </li>
+                </ul>
+        
+            </div>
+        </main>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
